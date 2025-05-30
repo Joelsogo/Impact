@@ -1,4 +1,30 @@
 "use stricts";
+const names = document.querySelector("#names");
+const emails = document.querySelector("#emails");
+const subjects = document.querySelector("#subjects");
+const messages = document.querySelector("#messages");
+const btnm = document.querySelector("#btnm");
+
+btnm.addEventListener("click", function (e) {
+  e.preventDefault();
+  const detail = {
+    yourname: names.value,
+    youremail: emails.value,
+    subject: subjects.value,
+    message: messages.value,
+  };
+  if (
+    !detail.yourname ||
+    !detail.youremail ||
+    !detail.subject ||
+    !detail.message
+  ) {
+    alert("Please fill out this field.");
+  } else {
+    alert("Message submitted");
+    // btnm.textContent = `my name is ${detail.yourname} , and my email is ${detail.youremail}`;
+  }
+});
 
 // NAV //
 
@@ -82,9 +108,6 @@ togo.addEventListener("click", function () {
 });
 
 
-
-
-
 // const modal = document.querySelector(".login-modal");
 // const modalBtn = document.querySelectorAll(".btn");
 // const modalCloser = document.querySelector(".close-btn");
@@ -98,19 +121,19 @@ togo.addEventListener("click", function () {
 //   btv.addEventListener("click", function () {
 //     modal.style.display = "block";
 //   });
-  
+
 //   const closeModal = () => {
 //     modal.style.display = "none";
 //   };
-  
+
 //   modalCloser.addEventListener("click", closeModal);
-  
+
 //   window.addEventListener("click", function (e) {
 //     if (e.target == modal) {
 //       modal.style.display = "none";
 //     }
 //   });
-  
+
 //   togo.addEventListener("click", function () {
 //     if (!email.value || !pass.value || !passTwo.value) {
 //       alert("please fill the input fields");
