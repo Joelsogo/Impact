@@ -1,7 +1,57 @@
 "use stricts";
+
+const body = document.querySelector("body");
+const mySwiper = document.querySelector(".mySwiper");
+mySwiper.setAttribute("slides-per-view", 3);
+
+function reduceSwiperSize() {
+  if (body.clientWidth <= 600) {
+    mySwiper.setAttribute("slides-per-view", 1);
+  } else {
+    mySwiper.setAttribute("pagination-colour", red);
+  }
+}
+window.addEventListener("resize", reduceSwiperSize);
+
+
+const tabButtons = document.querySelectorAll(".tab-button");
+
+
+tabButtons.forEach((tab, index) => {
+  tab.addEventListener("click", function () {
+    document.querySelectorAll(".tab-content").forEach((tabContent) => {
+      tabContent.classList.remove("show");
+    });
+    document.querySelectorAll(".tab-button").forEach((tabButton) => {
+      tabButton.classList.remove("show");
+    });
+
+    document.querySelector(`.tab-content-${index + 1}`).classList.add("show");
+    document.querySelector(`.tab-button-${index + 1}`).classList.add("show");
+  });
+});
+
+const tapButtons = document.querySelectorAll(".tabs-btn");
+tapButtons.forEach((tap, num) => {
+  tap.addEventListener("click", function () {
+    document.querySelectorAll(".tabs-content").forEach((tabsContent) => {
+      tabsContent.classList.remove("reveal");
+    });
+    document.querySelectorAll(".tabs-btn").forEach((tapButton) => {
+      tapButton.classList.remove("reveal");
+    });
+
+    document.querySelector(`.tabi-content-${num + 1}`).classList.add("reveal");
+    document.querySelector(`.taBtn-${num + 1}`).classList.add("reveal");
+  });
+});
+
 const names = document.querySelector("#names");
 const emails = document.querySelector("#emails");
 const subjects = document.querySelector("#subjects");
+const image = document.querySelector(".fonto");
+const images = document.querySelector(".image");
+
 const messages = document.querySelector("#messages");
 const btnm = document.querySelector("#btnm");
 
@@ -106,7 +156,6 @@ togo.addEventListener("click", function () {
   passTwo.value = " ";
   closeModal();
 });
-
 
 // const modal = document.querySelector(".login-modal");
 // const modalBtn = document.querySelectorAll(".btn");
