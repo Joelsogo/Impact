@@ -28,21 +28,20 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    
+
     width: 100%;
   }
-  .team-img-box{
+  .team-img-box {
     grid-template-columns: repeat(2, 1fr);
   }
   .pricing-list-box-1 {
-margin-right: 0;
-
-  } 
+    margin-right: 0;
+  }
   .serviceInfoBox {
     padding: 2rem;
     width: 100%;
   }
-  .contact{
+  .contact {
     padding: 2rem;
   }
 }
@@ -95,14 +94,14 @@ margin-right: 0;
   .heroText {
     width: 75%;
   }
-  
+
   .serviceInfoBox,
   .team-grid-box,
   .pricing-box,
   .contact-box {
     grid-template-columns: 1fr 1fr;
   }
-  .contact-box{
+  .contact-box {
     grid-template-columns: 1fr 1.5fr;
   }
 }
@@ -110,13 +109,13 @@ margin-right: 0;
   .about-box {
     grid-template-columns: 1fr;
   }
-  .blog-content{
+  .blog-content {
     grid-template-columns: repeat(2, 1fr);
   }
-  .tab-component{
+  .tab-component {
     grid-template-columns: repeat(2, 1fr);
   }
-  .contact-box{
+  .contact-box {
     grid-template-columns: 1fr;
   }
   .footer {
@@ -142,7 +141,7 @@ margin-right: 0;
 }
 
 @media (max-width: 800px) {
-  .blog-content{
+  .blog-content {
     grid-template-columns: 1fr;
   }
   .serviceInfoBox,
@@ -159,10 +158,10 @@ margin-right: 0;
     bottom: 9rem;
     left: 21%;
   }
-  .tab-component{
+  .tab-component {
     grid-template-columns: 1fr;
   }
-  .team-img-box{
+  .team-img-box {
     grid-template-columns: 1fr;
   }
   .footer {
@@ -176,7 +175,13 @@ margin-right: 0;
   .navs {
     padding: 2rem 6rem;
   }
-
+  .blogText {
+    text-align: initial;
+    padding: 1rem 5rem;
+  }
+  .mini-navs {
+    padding: 0;
+  }
   .hero {
     padding: 2rem;
     width: 100%;
@@ -194,7 +199,7 @@ margin-right: 0;
     bottom: 0rem;
     z-index: 999;
   }
-  
+
   .footer {
     grid-template-columns: 1.5fr 1fr;
   }
@@ -210,6 +215,16 @@ margin-right: 0;
   }
   .cta {
     height: 60dvh;
+  }
+  .navs {
+    padding: 2rem;
+  }
+  .blogText {
+    text-align: initial;
+    padding: 1rem 5rem;
+  }
+  .mini-navs {
+    padding: 0;
   }
   .ctaBoxe {
     grid-template-columns: 1fr;
@@ -238,7 +253,7 @@ margin-right: 0;
   .stats-box {
     grid-template-columns: 1fr;
   }
-  .footer{
+  .footer {
     grid-template-columns: auto;
   }
 }
@@ -253,6 +268,16 @@ margin-right: 0;
     gap: 2rem;
     align-items: center;
     justify-content: center;
+  }
+  .navs {
+    padding: 0;
+  }
+  .blogText {
+    text-align: initial;
+    padding: 1rem 5rem;
+  }
+  .mini-navs {
+    padding: 0;
   }
   .heroTitle {
     font-size: 4.5rem;
@@ -269,7 +294,7 @@ margin-right: 0;
   .accordionTitle {
     font-size: 14px;
   }
-  .contact-address{
+  .contact-address {
     padding-right: 1rem;
   }
   .team-box,
@@ -280,11 +305,10 @@ margin-right: 0;
   .accordionPosi {
     display: none;
   }
- 
 }
 @media (max-width: 340px) {
   .hero {
-padding-top: 3rem;
+    padding-top: 3rem;
   }
   .heroBox {
     display: flex;

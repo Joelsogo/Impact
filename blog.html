@@ -4,16 +4,9 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link href="assets/img/favicon.png" rel="icon" />
-    <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon" />
-
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" />
-
-    <!-- <link rel="stylesheet" href="/style.css" /> -->
-    <!-- <link rel="stylesheet" href="general.css" /> -->
-    <script defer src="/index.js"></script>
+    <link rel="stylesheet" href="general.css" />
+    <link rel="stylesheet" href="/querries.css" />
+    <script defer src="script.js"></script>
     <script
       type="module"
       src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
@@ -24,234 +17,354 @@
     ></script>
   </head>
   <body>
-    <header class="header">
-      <div class="topbar">
-        <div class="topbar-container padd-10">
-          <div class="topbar-contact-info">
-            <a href="#" class="topbar-contact"
-              ><ion-icon name="mail-outline"></ion-icon> contact@example.com</a
-            >
-            <a href="#" class="topbar-contact"
-              ><ion-icon name="phone-portrait-outline"></ion-icon> + 1 5589
-              55488 55</a
-            >
-          </div>
-          <div class="topbar-icon-box">
-            <a href="#" class="topbar-icon-link"
-              ><ion-icon name="logo-twitter"></ion-icon
+    <nav class="nav padd-10">
+      <h3 class="logo">Impact</h3>
+      <div class="navInput">
+        <ul class="navList">
+          <li><a href="index.html" class="navs">Home</a></li>
+          <li><a href="#about" class="navs">About</a></li>
+          <li><a href="#service" class="navs">Services</a></li>
+          <li><a href="#portfolio" class="navs">Porfolio</a></li>
+          <li><a href="#team" class="navs">Team</a></li>
+          <li><a href="blog.html" class="navs">Blog</a></li>
+          <li>
+            <a href="#home" class="navs"
+              >Dropdown <ion-icon name="chevron-down-outline"></ion-icon
             ></a>
-            <a href="#" class="topbar-icon-link"
-              ><ion-icon name="logo-facebook"></ion-icon
-            ></a>
-            <a href="#" class="topbar-icon-link"
-              ><ion-icon name="logo-instagram"></ion-icon
-            ></a>
-            <a href="#" class="topbar-icon-link"
-              ><ion-icon name="logo-linkedin"></ion-icon
-            ></a>
-          </div>
-        </div>
-        <div class="brand">
-          <div class="brand-container padd-10">
-            <a href="#" class="logo">
-              <!-- <img src="/img/logo.png" alt="" class="logo-img"> -->
-              <h1 class="logoName">Impact</h1>
-            </a>
-            <nav class="navmenu">
-              <ul class="nav-list-box">
-                <li class="nav-list">
-                  <a href="#home" class="nav-link">Home</a>
-                </li>
-                <li class="nav-list">
-                  <a href="#about" class="nav-link">About</a>
-                </li>
-                <li class="nav-list">
-                  <a href="#services" class="nav-link">Services</a>
-                </li>
-                <li class="nav-list">
-                  <a href="#portfolio" class="nav-link">Portfolio</a>
-                </li>
-                <li class="nav-list">
-                  <a href="#team" class="nav-link">Team</a>
-                </li>
-                <li class="nav-list">
-                  <a href="blog.html" class="nav-link">Blog</a>
-                </li>
-                <li class="nav-lists b">
-                  <a href="#home" class="nav-link">Dropdown</a>
-                  <ul class="nav-drop">
-                    <li><a href="#" class="drop1">Dropdown 1</a></li>
-                    <li><a href="#" class="drop1">Dropdown 2</a></li>
-                    <li class="deeps">
-                      <a href="#" class="main-deep mains">Deep Dropdown</a>
-                      <ul class="deep-drops">
-                        <li>
-                          <a href="#" class="main-deep">Depp Dropdown 1</a>
-                        </li>
-                        <li>
-                          <a href="#" class="main-deep">Depp Dropdown 2</a>
-                        </li>
-                        <li>
-                          <a href="#" class="main-deep">Depp Dropdown 3</a>
-                        </li>
-                      </ul>
-                    </li>
-                    <li><a href="#" class="drop1">Dropdown 3</a></li>
-                  </ul>
-                </li>
-                <li class="nav-list">
-                  <a href="#" class="nav-link">Contract</a>
-                </li>
-              </ul>
-            </nav>
+          </li>
+          <li><a href="#contact" class="navs">Contact</a></li>
+        </ul>
+        <div class="navBtnBox">
+          <div class="navToggle">
+            <ion-icon class="navBtns open" name="menu-outline"></ion-icon>
+            <ion-icon class="navBtns close" name="close-outline"></ion-icon>
           </div>
         </div>
       </div>
-    </header>
-    <section class="rbp">
-      <div class="our-service-box">
-        <h1 class="service-title rbpST">Recent Blog Posts</h1>
-        <p class="service-text">
-          Necessitatibus eius consequatur ex aliquid fuga eum quidem sint
-          consectetur velit
+    </nav>
+    <section class="blog blogs" id="blog">
+      <div class="titleBox">
+       <div class="title-box blogTitleBox">
+          <h1 class="title blogTitle"> Blog</h1>
+          <p class="text blogText">
+          We meet every need with tailored solutions, helping clients overcome
+          challenges while staying true to their goals and values.
         </p>
       </div>
-      <div class="rgbContainer">
-        <div class="rgbBox">
-          <img src="img/blog/blog-1.jpg" alt="" class="rgbImg" />
-          <p class="rgbText">Politics</p>
-          <a href="#" class="rgbTitle"
-            >Dolorum optio tempore voluptas dignissimos</a
-          >
-          <div class="rgbSubBox">
-            <img src="img/blog/blog-author.jpg" alt="" class="rgbSubImg" />
-            <div class="rgbsubImg">
-              <h2 class="rgbsubTitle">Manrie Doe</h2>
-              <p class="rgbsubText">Jan 1, 2022</p>
+      <div class="mini-nav"><a href="index.html" class="navs mini-navs">Home</a> / <span class="view">Blog</span>
+      </div>
+      <div class="blog-content mag-5 padd-10">
+        <div class="blog-box">
+          <img src="/img/blog/blog-1.jpg" alt="" class="blog-img">
+          <p class="blog-text">Politics</p>
+          <a href="#" class="blog-title">Dolorum optio tempore voluptas dignissimos</a>
+          <div class="blog-aurthor-box">
+            <img src="/img/blog/blog-author.jpg" alt="" class="aur-img">
+            <div class="blog-aurthur-box">
+              <h3 class="blog-aurthur-title">Maria Doe</h3>
+              <p class="blog-aurthur-text">Jan 1, 2022</p>
             </div>
           </div>
         </div>
-        <div class="rgbBox">
-          <img src="img/blog/blog-2.jpg" alt="" class="rgbImg" />
-          <p class="rgbText">Sports</p>
-          <a href="#" class="rgbTitle">
-            Nisi magni odit consequatur autem nulla dolorem</a
-          >
-          <div class="rgbSubBox">
-            <img src="img/blog/blog-author-2.jpg" alt="" class="rgbSubImg" />
-            <div class="rgbsubImg">
-              <h2 class="rgbsubTitle">Allisa Mayer</h2>
-              <p class="rgbsubText">Jun 5, 2022</p>
+        <div class="blog-box">
+          <img src="/img/blog/blog-2.jpg" alt="" class="blog-img">
+          <p class="blog-text">Sports</p>
+          <a href="#" class="blog-title">Nisi magni odit consequatur autem nulla dolorem</a>
+          <div class="blog-aurthor-box">
+            <img src="/img/blog/blog-author-2.jpg" alt="" class="aur-img">
+            <div class="blog-aurthur-box">
+              <h3 class="blog-aurthur-title">Allisa Mayer</h3>
+              <p class="blog-aurthur-text">Jun 5, 2022</p>
             </div>
           </div>
         </div>
-        <div class="rgbBox">
-          <img src="img/blog/blog-3.jpg" alt="" class="rgbImg" />
-          <p class="rgbText">Entertainment</p>
-          <a href="#" class="rgbTitle"
-            >Possimus soluta ut id suscipit ea ut in quo quia et soluta</a
-          >
-          <div class="rgbSubBox">
-            <img src="img/blog/blog-author-3.jpg" alt="" class="rgbSubImg" />
-            <div class="rgbsubImg">
-              <h2 class="rgbsubTitle">Mark Dower</h2>
-              <p class="rgbsubText">Jun 22, 2022</p>
+        <div class="blog-box">
+          <img src="/img/blog/blog-3.jpg" alt="" class="blog-img">
+          <p class="blog-text">Entertainment</p>
+          <a href="#" class="blog-title">Possimus soluta ut id suscipit ea ut in quo quia et soluta</a>
+          <div class="blog-aurthor-box">
+            <img src="/img/blog/blog-author-3.jpg" alt="" class="aur-img">
+            <div class="blog-aurthur-box">
+              <h3 class="blog-aurthur-title">Mark Dower</h3>
+              <p class="blog-aurthur-text">Jun 22, 2022</p>
             </div>
           </div>
         </div>
+        <div class="blog-box">
+          <img src="/img/blog/blog-4.jpg" alt="" class="blog-img">
+          <p class="blog-text">Sports</p>
+          <a href="#" class="blog-title">Non rem rerum nam cum quo minus olor distincti</a>
+          <div class="blog-aurthor-box">
+            <img src="/img/blog/blog-author-4.jpg" alt="" class="aur-img">
+            <div class="blog-aurthur-box">
+              <h3 class="blog-aurthur-title">Lisa Neymer</h3>
+              <p class="blog-aurthur-text">Jun 30, 2022</p>
+            </div>
+          </div>
+        </div>
+        <div class="blog-box">
+          <img src="/img/blog/blog-5.jpg" alt="" class="blog-img">
+          <p class="blog-text">Politics</p>
+          <a href="#" class="blog-title">Accusamus quaerat aliquam qui debitis facilis consequatur</a>
+          <div class="blog-aurthor-box">
+            <img src="/img/blog/blog-author-5.jpg" alt="" class="aur-img">
+            <div class="blog-aurthur-box">
+              <h3 class="blog-aurthur-title">Denis Peterson</h3>
+              <p class="blog-aurthur-text">Jan 30, 2022</p>
+            </div>
+          </div>
+        </div>
+        <div class="blog-box">
+          <img src="/img/blog/blog-6.jpg" alt="" class="blog-img">
+          <p class="blog-text">Entertainment</p>
+          <a href="#" class="blog-title">Distinctio provident quibusdam numquam aperiam aut</a>
+          <div class="blog-aurthor-box">
+            <img src="/img/blog/blog-author-6.jpg" alt="" class="aur-img">
+            <div class="blog-aurthur-box">
+              <h3 class="blog-aurthur-title">Mike  Lendon</h3>
+              <p class="blog-aurthur-text">Feb 14, 2022</p>
+            </div>
+          </div>
+        </div>
+      </div>
       </div>
     </section>
-    <footer class="footer">
-      <div class="footerContainer">
-        <div class="footerBox">
-          <h2 class="footerTitle">Impact</h2>
-          <p class="footerText">
-            Cras fermentum odio eu feugiat lide par naso tierra. Justo eget nada
-            terra videa magna derita valies darta donna mare fermentum iaculis
-            eu non diam phasellus.
-          </p>
-          <div class="footerIconBox">
-            <a href="#" class="footerIcon"
-              ><ion-icon name="logo-twitter"></ion-icon
-            ></a>
-            <a href="#" class="footerIcon"
-              ><ion-icon name="logo-facebook"></ion-icon
-            ></a>
-            <a href="#" class="footerIcon"
-              ><ion-icon name="logo-instagram"></ion-icon
-            ></a>
-            <a href="#" class="footerIcon"
-              ><ion-icon name="logo-linkedin"></ion-icon
-            ></a>
-          </div>
-        </div>
-        <div class="footerBoxin">
-          <div class="footBox">
-            <h2 class="footTitle">Useful Links</h2>
-            <ul class="footListBox">
-              <li class="footList"><a href="#" class="footLink"> Home </a></li>
-              <li class="footList">
-                <a href="#" class="footLink"> About us </a>
-              </li>
-              <li class="footList">
-                <a href="#" class="footLink"> Services </a>
-              </li>
-              <li class="footList">
-                <a href="#" class="footLink"> Terms of service </a>
-              </li>
-              <li class="footList">
-                <a href="#" class="footLink"> Privacy policy </a>
-              </li>
-            </ul>
-          </div>
-          <div class="footBox">
-            <h2 class="footTitle">Our Services</h2>
-            <ul class="footListBox">
-              <li class="footList">
-                <a href="#" class="footLink"> Web Design</a>
-              </li>
-              <li class="footList">
-                <a href="#" class="footLink"> Web Development</a>
-              </li>
-              <li class="footList">
-                <a href="#" class="footLink"> Product Management </a>
-              </li>
-              <li class="footList">
-                <a href="#" class="footLink"> Marketing</a>
-              </li>
-              <li class="footList">
-                <a href="#" class="footLink"> Graphic Design</a>
-              </li>
-            </ul>
-          </div>
-          <div class="footBox">
-            <h2 class="footTitle">Contact Us</h2>
-            <div class="footContactBox">
-              <p class="footTexts">A108 Adam Street</p>
-              <p class="footTexts">New York, NY 535022</p>
-              <p class="footTexts">United States</p>
-            </div>
-            <div class="footContactBox">
-              <p class="footTexts">
-                <span class="footTxts">Phone: </span>+1 5589 55488 55
-              </p>
-              <p class="footTexts">
-                <span class="footTxts">Email: </span>joeloluwasogo@gmail.com
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="footerNote">
-        <p class="fnoteText">
-          © Copyright <span class="fnotetxt">Impact</span> All Rights Reserved
+  <section class="contact padd-10" id="contact">
+      <div class="titleBox mag-2 padd-50">
+       <div class="title-box">
+          <h1 class="title">Contact</h1>
+          <p class="sub-title"></p>
+          <p class="text">
+          We meet every need with tailored solutions, helping clients overcome
+          challenges while staying true to their goals and values.
         </p>
-        <p class="fnoteText">Designed by BootstrapMade</p>
       </div>
+      <div class="contact-box mag-5">
+        <div class="contact-address">
+          <div class="contact-address-box">
+            <ion-icon class="contact-icon" name="location-outline"></ion-icon>
+            <div class="contact-location">
+              <p class="contact-name">Address</p>
+              <p class="contact-article">Ilorin Kwara State, Nigeria</p>
+            </div>
+          </div>
+          <div class="contact-address-box">
+            <ion-icon class="contact-icon" name="location-outline"></ion-icon>
+            <div class="contact-location">
+              <p class="contact-name">Call Us</p>
+              <p class="contact-article">+2348164651948</p>
+            </div>
+          </div>
+          <div class="contact-address-box">
+            <ion-icon class="contact-icon" name="location-outline"></ion-icon>
+            <div class="contact-location">
+              <p class="contact-name">Email Us</p>
+              <p class="contact-article">joeloluwasogo@gmail.com</p>
+            </div>
+          </div>
+          <div class="map-box">
+            <iframe
+              class="map"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3946.1737341555295!2d4.549837900000001!3d8.4824821!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x103652971d126ec3%3A0x6f45834a4e93ef6a!2sIbrahim%20Taiwo%20Rd%2C%20Oko%20Erin%2C%20Kwara!5e0!3m2!1sen!2sng!4v1734598719003!5m2!1sen!2sng"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
+        </div>
+        <div class="contact-address fill">
+          <div class="contact-info-box">
+            <input type="text" class="contact-info" id="names" placeholder="Your Name" />
+            <input type="text" class="contact-info" id="emails" placeholder="Your Email" />
+          </div>
+          <input type="text" class="contact-info" id="subjects" placeholder="Subject" />
+          <input type="file" accept="image/*" src="" alt="" class="contact-info fonto" id="image">
+          <input type="text" class="contact-info" id="subjects" placeholder="Subject" />
+          <textarea
+            class="contact-info-text"
+            name=""
+            id="messages"
+            placeholder="Message"
+          ></textarea>
+          <button class="contact-btn" id="btnm">Send Message</button>
+        </div>
+      </div>
+  </section>
+  
+    <footer class="footer padd-10 mag-5">
+      <div class="footInfo">
+        <h2 class="footLogo">Impact</h2>
+        <p class="footText">
+          Cras fermentum odio eu feugiat lide par naso tierra. Justo eget nada terra videa magna derita valies darta donna mare fermentum iaculis eu non diam phasellus.
+        </p>
+        <div class="footIcon">
+          <ion-icon class="foot-icon" name="logo-twitter"></ion-icon>
+          <ion-icon class="foot-icon" name="logo-facebook"></ion-icon>
+          <ion-icon class="foot-icon" name="logo-instagram"></ion-icon>
+          <ion-icon class="foot-icon" name="logo-linkedin"></ion-icon>
+        </div>
+      </div>
+      <div class="footInfo">
+        <h2 class="footHeader">Useful Links</h2>
+        <a href="#" class="footText"
+        ><ion-icon
+        class="footLinkIcon"
+        name="chevron-forward-outline"
+        ></ion-icon
+        >Home</a
+        >
+        <a href="#" class="footText"
+        ><ion-icon
+        class="footLinkIcon"
+        name="chevron-forward-outline"
+        ></ion-icon
+        >About us</a
+        >
+        <a href="#" class="footText"
+        ><ion-icon
+        class="footLinkIcon"
+        name="chevron-forward-outline"
+        ></ion-icon
+        >Services</a
+        >
+        <a href="#" class="footText"
+        ><ion-icon
+        class="footLinkIcon"
+        name="chevron-forward-outline"
+        ></ion-icon
+        >Terms of service</a
+        >
+        <a href="#" class="footText"
+        ><ion-icon
+        class="footLinkIcon"
+        name="chevron-forward-outline"
+        ></ion-icon
+        >Privacy policy</a
+        >
+      </div>
+      <div class="footInfo">
+        <h2 class="footHeader">Our Services</h2>
+        <a href="#" class="footText"
+        ><ion-icon
+        class="footLinkIcon"
+        name="chevron-forward-outline"
+        ></ion-icon
+        >Web Design</a
+        >
+        <a href="#" class="footText"
+        ><ion-icon
+        class="footLinkIcon"
+        name="chevron-forward-outline"
+        ></ion-icon
+        >Web Development</a
+        >
+        <a href="#" class="footText"
+        ><ion-icon
+        class="footLinkIcon"
+        name="chevron-forward-outline"
+        ></ion-icon
+        >Product Management</a
+        >
+        <a href="#" class="footText"
+          ><ion-icon
+            class="footLinkIcon"
+            name="chevron-forward-outline"
+          ></ion-icon
+          >Marketing</a
+          >
+        <a href="#" class="footText"
+          ><ion-icon
+            class="footLinkIcon"
+            name="chevron-forward-outline"
+          ></ion-icon
+          >Graphic Design</a
+          >
+        </div>
+        <div class="footInfo fis">
+          <h2 class="footHeader">Follow Us</h2>
+          <p class="footText">A108 Adam Street</p>
+          <p class="footText fts">New York, NY 535022</p>
+          <p class="footText">
+            <span class="footBold">Phone: </span>+1 5589 55488 55
+          </p>
+          <p class="footText">
+            <span class="footBold">Email: </span> info@example.com
+          </p>
+        </div>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
     <script>
-      document.querySelector('.btn-box').addEventListener('click', function(e){
-          document.querySelector('.navi').classList.toggle('toggle')})
-  </script>
+      const names = document.querySelector("#names");
+const emails = document.querySelector("#emails");
+const subjects = document.querySelector("#subjects");
+const image = document.querySelector(".fonto");
+const images = document.querySelector(".image");
+
+const messages = document.querySelector("#messages");
+const btnm = document.querySelector("#btnm");
+
+btnm.addEventListener("click", function (e) {
+  e.preventDefault();
+  const detail = {
+    yourname: names.value,
+    youremail: emails.value,
+    subject: subjects.value,
+    message: messages.value,
+  };
+  if (
+    !detail.yourname ||
+    !detail.youremail ||
+    !detail.subject ||
+    !detail.message
+  ) {
+    alert("Please fill out this field.");
+  } else {
+    alert("Message submitted");
+    // btnm.textContent = `my name is ${detail.yourname} , and my email is ${detail.youremail}`;
+  }
+});
+
+// NAV //
+
+const nav = document.querySelector(".nav");
+const navBtn = document.querySelector(".navToggle");
+navBtn.addEventListener("click", function () {
+  nav.classList.toggle("stick");
+});
+
+// NAV STICK REMOVER //
+const navs = document.querySelectorAll(".navs");
+
+navs.forEach((button) => {
+  button.addEventListener("click", function () {
+    nav.classList.remove("stick");
+  });
+});
+
+// STICKY NAV //
+const headerSection = document.querySelector(".nav");
+
+const navObserver = new IntersectionObserver(
+  function (entries) {
+    const [entry] = entries;
+    if (!entry.isIntersecting) {
+      document.body.classList.add("sticky");
+    } else {
+      document.body.classList.remove("sticky");
+    }
+  },
+  {
+    root: null,
+    threshold: 0,
+    rootMargin: "-100px",
+  }
+);
+
+navObserver.observe(headerSection);
+
+    </script>
+
+
   </body>
 </html>

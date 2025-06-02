@@ -129,7 +129,7 @@ h6 {
   transition: 0.3s;
 }
 .navs:hover {
-  color: var(--accent-color);
+  color: var(--background-color);
 }
 .navBtnBox {
   display: flex;
@@ -154,6 +154,35 @@ h6 {
 
 .navToggle {
   display: none;
+}
+.mini-nav {
+  padding: 2rem 1rem;
+  width: 100%;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  font-size: 1.6rem;
+  color: var(--background-color);
+  background-color: color-mix(
+    in srgb,
+    var(--accent-color) 95%,
+    transparent 20%
+  );
+  box-shadow: 0px 0px 32px 12px rgb(0, 0, 0, 0.1);
+  transition: all 0.5s;
+}
+.mini-navs {
+  padding-left: 10rem;
+  color: color-mix(in srgb, var(--color) 90%, transparent 20%);
+  font-weight: 600;
+}
+.view {
+  font-family: var(--heading-font);
+  color: var(--background-color);
+  font-weight: 600;
+  text-decoration: none;
+  transition: 0.3s;
 }
 
 /* HERO SECTION START  */
@@ -720,7 +749,7 @@ swiper-slide {
 }
 .team-title {
   padding: 2rem 0 0 0;
-color: var(--heading-color);
+  color: var(--heading-color);
   font-family: var(--heading-font);
   font-size: 2rem;
   text-align: center;
@@ -837,13 +866,13 @@ sub {
   font-size: 16px;
 }
 
-.pp-btn{
+.pp-btn {
   padding-top: 2rem;
-text-align: center;
+  text-align: center;
 }
-.pp-btn-1{
+.pp-btn-1 {
   padding-top: 2rem;
-text-align: center;
+  text-align: center;
 }
 .pricing-btn {
   padding: 1rem 2rem;
@@ -916,7 +945,7 @@ text-align: center;
   transform: translateZ(-2px);
 }
 
-.icons-box ion-icon{
+.icons-box ion-icon {
   font-size: 4rem;
   color: var(--background-color);
 }
@@ -925,11 +954,142 @@ text-align: center;
   z-index: 10;
 }
 
+/* FAQ SECTIO START  */
+.faq {
+  background-color: whitesmoke;
+  scroll-margin-top: 8rem;
+  display: grid;
+  grid-template-columns: 1fr 1.5fr;
+  align-items: center;
+  justify-content: center;
+}
+.faqT {
+  color: var(--heading-color);
+  font-family: var(--heading-font);
+  font-size: 3rem;
+  font-weight: 400;
+}
+.faqS {
+  font-weight: 700;
+}
+
+/* CONTACT SECTION START  */
+.contact {
+  scroll-margin-top: 8rem;
+}
+.contact-box {
+  display: grid;
+  grid-template-columns: 2fr 3fr;
+  gap: 3rem;
+}
+
+.contact-address {
+  display: flex;
+  flex-direction: column;
+  border-top: 3px solid var(--accent-color);
+  border-bottom: 3px solid var(--accent-color);
+  padding: 3rem;
+  box-shadow: 1px 1px 10px 1px rgba(0, 0, 0, 0.1);
+  background-color: var(--background-color);
+  border-radius: 5px;
+}
+.map {
+  width: 100%;
+  height: 30vh;
+}
+.contact-address-box {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 3rem;
+}
+
+.contact-address-box .contact-icon:hover {
+  color: var(--accent-color);
+  background-color: #9ab3dd;
+}
+
+.contact-icon {
+  padding: 1rem;
+  font-size: 2rem;
+  border-radius: 50%;
+  color: var(--accent-color);
+  background-color: #b3ddf4;
+}
+
+.contact-name {
+  font-size: 2rem;
+  color: var(--heading-color);
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.contact-article {
+  font-size: 15px;
+}
+
+.contact-image {
+  width: 100%;
+}
+
+.contact-info-box {
+  display: flex;
+  gap: 2rem;
+}
+
+.contact-info {
+  width: 100%;
+  padding: 1rem 2rem;
+  margin-bottom: 3rem;
+  border: 1px solid lightblue;
+  outline: none;
+}
+
+.contact-info-text {
+  padding: 1rem 2rem;
+  width: 100%;
+  height: 20rem;
+  border: 1px solid lightblue;
+  margin-bottom: 2rem;
+  outline: none;
+}
+
+.contact-btn {
+  margin: auto;
+  padding: 1rem 2rem;
+  border-radius: 2rem;
+  font-size: 15px;
+  border: none;
+  background-color: var(--accent-color);
+  color: var(--background-color);
+  outline: none;
+}
 /* BLOG SECTION START  */
 .blog {
   scroll-margin-top: 2rem;
   width: 100%;
+
+  /* padding: 2rem; */
 }
+.blogTitleBox {
+  padding-top: 6rem;
+  background-color: var(--accent-color);
+  width: 100%;
+  margin-bottom: 0;
+}
+.blogTitle {
+  color: var(--background-color);
+  font-size: 3.5rem;
+  padding-bottom: 0;
+  margin-bottom: 0;
+}
+.blogText {
+  color: var(--background-color);
+  padding-bottom: 5rem;
+  padding: 1rem 10rem;
+  text-align: center;
+  width: 100%;
+}
+
 .blog-content {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
