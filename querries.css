@@ -199,7 +199,9 @@
     bottom: 0rem;
     z-index: 999;
   }
-
+.fonto::file-selector-button {
+width: 10rem;
+}
   .footer {
     grid-template-columns: 1.5fr 1fr;
   }
